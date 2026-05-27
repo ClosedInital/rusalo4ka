@@ -1,0 +1,51 @@
+/* Подключаем современный премиальный шрифт Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* Включаем плавную прокрутку по якорям (при клике на меню) */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Затемняющий градиент поверх главного фото для идеальной читаемости белого текста */
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(0, 15, 30, 0.4) 0%, rgba(0, 15, 30, 0.7) 100%);
+}
+
+/* Красивый скроллбар в стиле сайта */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f8fafc; 
+}
+::-webkit-scrollbar-thumb {
+    background: #0d9488; /* Цвет brand (teal-600) */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0f766e; 
+}
+/* Скрытие полосы прокрутки для карусели номеров */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Улучшение внешнего вида системных input type="date" */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+}
