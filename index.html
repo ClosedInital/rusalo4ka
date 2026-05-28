@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="База отдыха «Русалочка» в Анапе (ст. Благовещенская). Уютные номера, подогреваемый бассейн, первая линия, анимация для детей. Забронируйте идеальный отдых на Черном море!">
+        content="База отдыха «Русалочка» в Анапе (ст. Благовещенская). Уютные номера, чистый бассейн, первая линия, анимация для детей. Забронируйте идеальный отдых на Черном море!">
     <title>База отдыха «Русалочка» | Анапа, ст. Благовещенская</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,65 +28,65 @@
 <body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
 
     <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-            <a href="#" onclick="window.scrollTo(0,0); return false;"
-                class="flex items-center gap-2 sm:gap-3 group cursor-pointer z-50 shrink-0">
-                <img src="./images/logo_b.png" alt="Русалочка логотип" 
-                    class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
-                
-            </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" onclick="window.scrollTo(0,0); return false;"
+                    class="flex items-center gap-2 sm:gap-3 group cursor-pointer z-50 shrink-0">
+                    <img src="./images/logo_b.png" alt="Русалочка логотип"
+                        class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
 
-            <nav class="hidden md:flex space-x-6 lg:space-x-8 font-medium text-gray-700">
-                <a href="#about" class="hover:text-brand transition-colors">О нас</a>
-                <a href="#rooms" class="hover:text-brand transition-colors">Номера</a>
-                <a href="#infrastructure" class="hover:text-brand transition-colors">Инфраструктура</a>
-                <a href="#contacts" class="hover:text-brand transition-colors">Контакты</a>
-            </nav>
+                </a>
 
-            <div class="hidden lg:flex items-center gap-6 shrink-0">
-                <div class="flex flex-col text-right">
-                    <a href="tel:+79184774366"
-                        class="font-bold text-lg text-gray-900 hover:text-brand transition-colors">8 (918)
-                        47-74-366</a>
-                    <!--<span class="text-xs text-gray-500">Звонок по России бесплатный</span>-->
+                <nav class="hidden md:flex space-x-6 lg:space-x-8 font-medium text-gray-700">
+                    <a href="#about" class="hover:text-brand transition-colors">О нас</a>
+                    <a href="#rooms" class="hover:text-brand transition-colors">Номера</a>
+                    <a href="#infrastructure" class="hover:text-brand transition-colors">Инфраструктура</a>
+                    <a href="#contacts" class="hover:text-brand transition-colors">Контакты</a>
+                </nav>
+
+                <div class="hidden lg:flex items-center gap-6 shrink-0">
+                    <div class="flex flex-col text-right">
+                        <a href="tel:+79184774366"
+                            class="font-bold text-lg text-gray-900 hover:text-brand transition-colors">8 (918)
+                            47-74-366</a>
+                        <!--<span class="text-xs text-gray-500">Звонок по России бесплатный</span>-->
+                    </div>
+                    <a href="#rooms"
+                        class="bg-brand hover:bg-teal-700 text-white px-6 py-2.5 rounded-lg font-semibold shadow-md transition-all hover:shadow-lg transform hover:-translate-y-0.5">
+                        Бронировать
+                    </a>
                 </div>
-                <a href="#rooms"
-                    class="bg-brand hover:bg-teal-700 text-white px-6 py-2.5 rounded-lg font-semibold shadow-md transition-all hover:shadow-lg transform hover:-translate-y-0.5">
-                    Бронировать
-                </a>
-            </div>
 
-            <button id="mobile-menu-btn"
-                class="md:hidden flex items-center justify-center p-2 text-gray-700 hover:text-brand focus:outline-none z-50">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+                <button id="mobile-menu-btn"
+                    class="md:hidden flex items-center justify-center p-2 text-gray-700 hover:text-brand focus:outline-none z-50">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </div>
 
-    <div id="mobile-menu"
-        class="hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-lg md:hidden flex-col">
-        <nav class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700 text-lg">
-            <a href="#about" class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">О
-                нас</a>
-            <a href="#rooms"
-                class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Номера</a>
-            <a href="#infrastructure"
-                class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Инфраструктура</a>
-            <a href="#contacts" class="mobile-link hover:text-brand transition-colors pb-2">Контакты</a>
-            <div class="pt-2 flex flex-col gap-3">
-                <a href="tel:+79184774366" class="font-bold text-xl text-gray-900 text-center">8 (918) 47-74-366</a>
+        <div id="mobile-menu"
+            class="hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-lg md:hidden flex-col">
+            <nav class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700 text-lg">
+                <a href="#about" class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">О
+                    нас</a>
                 <a href="#rooms"
-                    class="mobile-link bg-brand text-center text-white px-6 py-3 rounded-lg font-semibold shadow-md">
-                    Забронировать
-                </a>
-            </div>
-        </nav>
-    </div>
-</header>
+                    class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Номера</a>
+                <a href="#infrastructure"
+                    class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Инфраструктура</a>
+                <a href="#contacts" class="mobile-link hover:text-brand transition-colors pb-2">Контакты</a>
+                <div class="pt-2 flex flex-col gap-3">
+                    <a href="tel:+79184774366" class="font-bold text-xl text-gray-900 text-center">8 (918) 47-74-366</a>
+                    <a href="#rooms"
+                        class="mobile-link bg-brand text-center text-white px-6 py-3 rounded-lg font-semibold shadow-md">
+                        Забронировать
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <!-- ГЛАВНЫЙ ЭКРАН -->
     <section class="relative min-h-screen flex flex-col justify-center pt-32 pb-16 md:pt-28 md:pb-12">
@@ -101,14 +101,14 @@
                 class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs sm:text-sm font-medium mb-4 sm:mb-6 uppercase tracking-wider">
                 Анапа, ст. Благовещенская
             </span>
-            
+
             <!-- Уменьшили шрифт на мобилке (text-4xl) -->
             <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 drop-shadow-xl leading-tight">
                 Незабываемый отдых <br> на берегу Черного моря
             </h1>
-            
+
             <p class="text-base sm:text-xl text-gray-100 mb-8 max-w-3xl mx-auto font-medium drop-shadow-md">
-                Уютные номера, большой подогреваемый бассейн, анимация для детей и песчаный пляж всего в паре минут
+                Уютные номера, большой чистый бассейн, анимация для детей и песчаный пляж всего в паре минут
                 ходьбы.
             </p>
 
@@ -123,18 +123,24 @@
                 <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 border border-gray-100">
                     <form id="bnovo-direct-form" class="flex flex-col md:flex-row items-end gap-4">
                         <div class="flex-1 w-full">
-                            <label for="dfrom" class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Заезд</label>
-                            <input type="date" id="dfrom" required class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
+                            <label for="dfrom"
+                                class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Заезд</label>
+                            <input type="date" id="dfrom" required
+                                class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
                         </div>
 
                         <div class="flex-1 w-full">
-                            <label for="dto" class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Выезд</label>
-                            <input type="date" id="dto" required class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
+                            <label for="dto"
+                                class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Выезд</label>
+                            <input type="date" id="dto" required
+                                class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
                         </div>
 
                         <div class="w-full md:w-32">
-                            <label for="adults" class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Гости</label>
-                            <select id="adults" class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium appearance-none cursor-pointer">
+                            <label for="adults"
+                                class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Гости</label>
+                            <select id="adults"
+                                class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium appearance-none cursor-pointer">
                                 <option value="1">1 чел.</option>
                                 <option value="2" selected>2 чел.</option>
                                 <option value="3">3 чел.</option>
@@ -144,7 +150,8 @@
                         </div>
 
                         <div class="w-full md:w-auto mt-4 md:mt-0">
-                            <button type="submit" class="w-full md:w-auto bg-brand hover:bg-teal-600 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 whitespace-nowrap">
+                            <button type="submit"
+                                class="w-full md:w-auto bg-brand hover:bg-teal-600 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 whitespace-nowrap">
                                 Найти номер
                             </button>
                         </div>
@@ -154,7 +161,7 @@
         </div>
     </section>
 
-    
+
 
     <section id="about" class="py-16 bg-gradient-to-b from-teal-50/70 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -164,48 +171,72 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div onclick="openGalleryModal('Первая линия', ['https://picsum.photos/id/103/800/600', 'https://picsum.photos/id/104/800/600'])"
+                <div onclick="openGalleryModal('Первая линия', ['./images/beach/1.jpg', './images/beach/2.jpg', './images/beach/3.jpg'])"
                     class="cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    <div
+                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Первая линия</h3>
-                    <p class="text-gray-600 leading-relaxed">Чистый песчаный пляж станицы Благовещенской находится всего в паре минут неспешного шага.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Первая
+                        линия</h3>
+                    <p class="text-gray-600 leading-relaxed">Чистый песчаный пляж станицы Благовещенской находится всего
+                        в паре минут неспешного шага.</p>
                 </div>
 
                 <a href="#infrastructure"
                     class="block cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    <div
+                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                            </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Бассейн</h3>
-                    <p class="text-gray-600 leading-relaxed">Большой бассейн с кристально чистой водой, детской зоной и удобными шезлонгами.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Бассейн
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">Большой бассейн с кристально чистой водой, детской зоной и
+                        удобными шезлонгами.</p>
                 </a>
 
                 <a href="#infrastructure"
                     class="block cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    <div
+                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Для детей</h3>
-                    <p class="text-gray-600 leading-relaxed">Игровые площадки, батуты и веселая анимация. Вашим детям точно не будет скучно!</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Для детей
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">Игровые площадки, батуты и веселая анимация. Вашим детям
+                        точно не будет скучно!</p>
                 </a>
 
-                <div onclick="openGalleryModal('Вкусное питание', ['https://picsum.photos/id/429/800/600', 'https://picsum.photos/id/430/800/600'])"
+                <div onclick="openGalleryModal('Вкусное питание', ['./images/food/1.webp', './images/food/2.webp', './images/food/3.webp'])"
                     class="cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    <div
+                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Вкусное питание</h3>
-                    <p class="text-gray-600 leading-relaxed">Возможность заказать комплексное питание (завтрак, обед, ужин) в нашей уютной столовой.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Вкусное
+                        питание</h3>
+                    <p class="text-gray-600 leading-relaxed">Возможность заказать комплексное питание (завтрак, обед,
+                        ужин) в нашей уютной столовой.</p>
                 </div>
             </div>
         </div>
@@ -383,7 +414,8 @@
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between items-center md:items-start">
                             <div class="w-full">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ Деревянный домик<br>2-х местный</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ Деревянный
+                                    домик<br>2-х местный</h3>
                             </div>
                             <div class="w-full mt-6">
                                 <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
@@ -410,7 +442,8 @@
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between items-center md:items-start">
                             <div class="w-full">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>2-х местный</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>2-х местный
+                                </h3>
                             </div>
                             <div class="w-full mt-6">
                                 <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
@@ -437,7 +470,8 @@
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between items-center md:items-start">
                             <div class="w-full">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>2-х местный + доп.место</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>2-х местный +
+                                    доп.место</h3>
                             </div>
                             <div class="w-full mt-6">
                                 <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
@@ -464,7 +498,8 @@
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between items-center md:items-start">
                             <div class="w-full">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>3-х местный + доп.место</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>3-х местный +
+                                    доп.место</h3>
                             </div>
                             <div class="w-full mt-6">
                                 <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
@@ -491,7 +526,8 @@
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between items-center md:items-start">
                             <div class="w-full">
-                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>4-х местный + доп.место</h3>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>4-х местный +
+                                    доп.место</h3>
                             </div>
                             <div class="w-full mt-6">
                                 <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
@@ -612,11 +648,17 @@
         </div>
     </div>
 
-    <div id="gallery-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 opacity-0 transition-opacity duration-300">
-        <div id="gallery-modal-content" class="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 flex flex-col max-h-[90vh]">
+    <div id="gallery-modal"
+        class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <div id="gallery-modal-content"
+            class="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 flex flex-col max-h-[90vh]">
 
-            <button onclick="closeGalleryModal()" class="absolute top-4 right-4 z-20 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-800 hover:text-red-500 hover:bg-white shadow-md transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <button onclick="closeGalleryModal()"
+                class="absolute top-4 right-4 z-20 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-800 hover:text-red-500 hover:bg-white shadow-md transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
             </button>
 
             <div class="p-5 border-b border-gray-100">
@@ -624,43 +666,277 @@
             </div>
 
             <div class="w-full h-72 md:h-[600px] bg-gray-900 relative group/modalslider flex-shrink-0">
-                <div id="gallery-modal-images" class="flex overflow-x-auto h-full snap-x snap-mandatory no-scrollbar scroll-smooth">
-                    </div>
+                <div id="gallery-modal-images"
+                    class="flex overflow-x-auto h-full snap-x snap-mandatory no-scrollbar scroll-smooth">
+                </div>
 
-                <button onclick="scrollGalleryModal(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <button onclick="scrollGalleryModal(-1)"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
                 </button>
-                <button onclick="scrollGalleryModal(1)" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <button onclick="scrollGalleryModal(1)"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
                 </button>
             </div>
         </div>
     </div>
 
     <section id="infrastructure" class="py-20 bg-gray-50 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
-                <div class="flex-1">
-                    <img src="./images/pool.jpg" alt="Бассейн"
-                        class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
-                </div>
-                <div class="flex-1 lg:pl-10">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Шикарный бассейн с морской водой</h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">Сердце нашей базы отдыха — просторный бассейн
-                        под открытым небом. Мы поддерживаем кристальную чистоту воды на протяжении всего сезона.</p>
-                </div>
+        <!-- БЛОК БАССЕЙНА (VIP-секция с прайсом) -->
+        <div
+            class="bg-gradient-to-br from-blue-50 to-teal-50 rounded-[2.5rem] p-6 sm:p-10 lg:p-12 mb-20 shadow-sm border border-blue-100">
+            <div class="text-center mb-10">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-blue-500 text-white text-sm font-bold mb-4 uppercase tracking-wider shadow-md">
+                    Гордость базы
+                </span>
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Самый большой бассейн в округе</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Кристально чистая морская вода, комфортная температура в любую погоду и удобные шезлонги.
+                </p>
             </div>
 
-            <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
-                <div class="flex-1">
-                    <img src="./images//kids.jpg" alt="Детский отдых"
-                        class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <!-- Левая часть: Карусель -->
+                <div class="flex-1 w-full">
+                    <div
+                        class="relative group/infraslider w-full h-[400px] md:h-[450px] rounded-3xl shadow-xl overflow-hidden bg-white border-4 border-white">
+                        <div id="pool-carousel"
+                            class="flex overflow-x-auto h-full snap-x snap-mandatory no-scrollbar scroll-smooth">
+                            <!-- Слайд 1 -->
+                            <div class="shrink-0 w-full h-full snap-center relative">
+                                <img src="./images/pool.jpg" alt="Бассейн 1" class="w-full h-full object-cover">
+                            </div>
+                            <!-- Слайд 2 -->
+                            <div class="shrink-0 w-full h-full snap-center relative">
+                                <img src="https://picsum.photos/id/404/800/500" alt="Бассейн 2"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <!-- Слайд 3 -->
+                            <div class="shrink-0 w-full h-full snap-center relative">
+                                <img src="https://picsum.photos/id/405/800/500" alt="Бассейн 3"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Кнопки навигации -->
+                        <button onclick="scrollInfraGallery('pool-carousel', -1)"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/infraslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button onclick="scrollInfraGallery('pool-carousel', 1)"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/infraslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="flex-1 lg:pr-10">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Рай для ваших детей</h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">Мы позиционируем себя как семейная база
-                        отдыха. Пока взрослые отдыхают, детям всегда есть чем заняться! На территории установлен большой
-                        игровой комплекс.</p>
+
+                <!-- Правая часть: Прайс и фичи -->
+                <div class="flex-1 w-full flex flex-col justify-center">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 border-b border-gray-100 pb-3">Прайс-лист</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center">
+                                <div class="flex items-center gap-3">
+                                    <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-gray-700 font-medium">Для проживающих на базе</span>
+                                </div>
+                                <span class="font-bold text-brand bg-teal-50 px-3 py-1 rounded-lg">Бесплатно</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div class="flex items-center gap-3">
+                                    <svg class="w-5 h-5 text-blue-500 shrink-0" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-gray-700 font-medium">Гостевой визит (взрослые)</span>
+                                </div>
+                                <span class="font-bold text-gray-900">1 000 ₽</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div class="flex items-center gap-3">
+                                    <svg class="w-5 h-5 text-orange-400 shrink-0" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-gray-700 font-medium">Гостевой визит (дети до 12 лет)</span>
+                                </div>
+                                <span class="font-bold text-gray-900">500 ₽</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
+                            <span class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="text-sm font-bold text-gray-800 leading-tight">Зона<br>загара</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
+                            <span class="bg-teal-100 text-teal-600 p-2 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="text-sm font-bold text-gray-800 leading-tight">Безопасная<br>детская
+                                зона</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- БЛОК ДЕТСКОГО ОТДЫХА (VIP-секция с фичами) -->
+        <div
+            class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-[2.5rem] p-6 sm:p-10 lg:p-12 shadow-sm border border-orange-100">
+            <div class="text-center mb-10">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-accent text-white text-sm font-bold mb-4 uppercase tracking-wider shadow-md">
+                    Семейный отдых
+                </span>
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Рай для ваших детей</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Мы позиционируем себя как семейная база отдыха. Пока взрослые расслабляются, детям всегда есть чем
+                    заняться!
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row-reverse gap-12 items-center">
+                <!-- Правая часть (на десктопе): Карусель -->
+                <div class="flex-1 w-full">
+                    <div
+                        class="relative group/infraslider w-full h-[400px] md:h-[450px] rounded-3xl shadow-xl overflow-hidden bg-white border-4 border-white">
+                        <div id="kids-carousel"
+                            class="flex overflow-x-auto h-full snap-x snap-mandatory no-scrollbar scroll-smooth">
+                            <!-- Слайд 1 -->
+                            <div class="shrink-0 w-full h-full snap-center relative">
+                                <img src="./images/kids.jpg" alt="Детский отдых 1" class="w-full h-full object-cover">
+                            </div>
+                            <!-- Слайд 2 -->
+                            <div class="shrink-0 w-full h-full snap-center relative">
+                                <img src="https://picsum.photos/id/417/800/500" alt="Детский отдых 2"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <!-- Слайд 3 -->
+                            <div class="shrink-0 w-full h-full snap-center relative">
+                                <img src="https://picsum.photos/id/418/800/500" alt="Детский отдых 3"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Кнопки навигации -->
+                        <button onclick="scrollInfraGallery('kids-carousel', -1)"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/infraslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button onclick="scrollInfraGallery('kids-carousel', 1)"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/infraslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Левая часть (на десктопе): Список развлечений -->
+                <div class="flex-1 w-full flex flex-col justify-center">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 border-b border-gray-100 pb-3">Что есть на
+                            территории?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
+                                </svg>
+                                <div>
+                                    <span class="text-gray-900 font-bold block">Детские площадки</span>
+                                    <span class="text-gray-600 text-sm">Большой игровой комплекс для активных игр на
+                                        свежем воздухе.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                    </path>
+                                </svg>
+                                <div>
+                                    <span class="text-gray-900 font-bold block">Веселая анимация</span>
+                                    <span class="text-gray-600 text-sm">Регулярные шоу-программы и интересные конкурсы
+                                        от наших аниматоров.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <span class="text-gray-900 font-bold block">Творческая студия</span>
+                                    <span class="text-gray-600 text-sm">Увлекательные мастер-классы, лепка, рисование и
+                                        создание слаймов.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
+                            <span class="bg-orange-100 text-accent p-2 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </span>
+                            <span class="text-sm font-bold text-gray-800 leading-tight">Абсолютно<br>безопасно</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3">
+                            <span class="bg-yellow-100 text-yellow-600 p-2 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <span class="text-sm font-bold text-gray-800 leading-tight">Весело всем<br>возрастам</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -671,44 +947,65 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Инфраструктура и развлечения</h2>
                 <div class="w-20 h-1.5 bg-brand mx-auto rounded-full"></div>
-                <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">Мы позаботились о том, чтобы ваш отдых был максимально комфортным и насыщенным. На территории есть всё необходимое для детей и взрослых.</p>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">Мы позаботились о том, чтобы ваш отдых был
+                    максимально комфортным и насыщенным. На территории есть всё необходимое для детей и взрослых.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-                
+
                 <div class="bg-teal-50/60 p-8 sm:p-10 rounded-3xl border border-teal-100">
                     <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                         <span class="bg-brand text-white p-2 rounded-xl shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
                         </span>
                         Включено в стоимость
                     </h3>
                     <ul class="space-y-6">
                         <li class="flex gap-4">
-                            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm text-brand">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div
+                                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm text-brand">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 text-lg">Детская площадка и анимация</h4>
-                                <p class="text-gray-600 text-sm mt-1">Игровой комплекс для малышей на свежем воздухе и регулярная веселая детская анимация.</p>
+                                <p class="text-gray-600 text-sm mt-1">Игровой комплекс для малышей на свежем воздухе и
+                                    регулярная веселая детская анимация.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
-                            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm text-brand">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <div
+                                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm text-brand">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 text-lg">Спортивный инвентарь</h4>
-                                <p class="text-gray-600 text-sm mt-1">Мячи, ракетки, настольный теннис, шахматы, шашки и настольный футбол — всё для активного отдыха.</p>
+                                <p class="text-gray-600 text-sm mt-1">Мячи, ракетки, настольный теннис, шахматы, шашки и
+                                    настольный футбол — всё для активного отдыха.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
-                            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm text-brand">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path></svg>
+                            <div
+                                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm text-brand">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z">
+                                    </path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 text-lg">Мангальная зона</h4>
-                                <p class="text-gray-600 text-sm mt-1">Оборудованная зона отдыха с бесплатным предоставлением решеток, шампуров, печи и казана (12 л).</p>
+                                <p class="text-gray-600 text-sm mt-1">Оборудованная зона отдыха с бесплатным
+                                    предоставлением решеток, шампуров, печи и казана (12 л).</p>
                             </div>
                         </li>
                     </ul>
@@ -717,41 +1014,63 @@
                 <div class="bg-gray-50 p-8 sm:p-10 rounded-3xl border border-gray-100">
                     <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                         <span class="bg-white text-gray-500 p-2 rounded-xl shadow-sm border border-gray-100">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
                         </span>
                         Дополнительные услуги
                     </h3>
                     <ul class="space-y-6">
                         <li class="flex gap-4">
-                            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm border border-gray-100 text-accent">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                            <div
+                                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm border border-gray-100 text-accent">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                                    </path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 text-lg">Студия творчества и шоу</h4>
-                                <p class="text-gray-600 text-sm mt-1">Регулярные шоу-программы и мастер-классы (создание слаймов, блеск-тату, роспись футболок, кепок и фигурок).</p>
+                                <p class="text-gray-600 text-sm mt-1">Регулярные шоу-программы и мастер-классы (создание
+                                    слаймов, блеск-тату, роспись футболок, кепок и фигурок).</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
-                            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm border border-gray-100 text-blue-500">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                            <div
+                                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm border border-gray-100 text-blue-500">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z">
+                                    </path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 text-lg">Полезный сервис</h4>
-                                <p class="text-gray-600 text-sm mt-1">Прокат детских и взрослых велосипедов/самокатов. Прачечная и гладильная комната. Зарядная станция для авто.</p>
+                                <p class="text-gray-600 text-sm mt-1">Прокат детских и взрослых велосипедов/самокатов.
+                                    Прачечная и гладильная комната. Зарядная станция для авто.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
-                            <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm border border-gray-100 text-pink-500">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                            <div
+                                class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 shadow-sm border border-gray-100 text-pink-500">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                    </path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="font-bold text-gray-900 text-lg">Вкусные радости</h4>
-                                <p class="text-gray-600 text-sm mt-1">Натуральный зерновой кофе, прохладительные напитки и жареное мороженое, которое приготовят прямо при вас.</p>
+                                <p class="text-gray-600 text-sm mt-1">Натуральный зерновой кофе, Прохладительные напитки
+                                    и вкусный шашлык, который приготовят прямо при вас.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -764,116 +1083,223 @@
             </div>
 
             <div class="space-y-4">
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
                         <span class="pr-4 group-hover:text-brand transition-colors">Во сколько заселение?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— с 13:00, но если Вы приедете раньше и ваш номер будет уже свободен, мы Вас заселим раньше.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— с 13:00, но если Вы приедете раньше и ваш номер
+                            будет уже свободен, мы Вас заселим раньше.</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
-                        <span class="pr-4 group-hover:text-brand transition-colors">Во сколько выселение из номера?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">Во сколько выселение из
+                            номера?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— освободить номер нужно до 11:00, ключи, брелоки и браслеты от номера нужно сдать в администрации.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— освободить номер нужно до 11:00, ключи, брелоки
+                            и браслеты от номера нужно сдать в администрации.</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
-                        <span class="pr-4 group-hover:text-brand transition-colors">При бронировании нужно вносить предоплату?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">При бронировании нужно вносить
+                            предоплату?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— бронирование выбранной категории номера (домика) производится после перечисления предоплаты (30% от полной стоимости проживания).</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— бронирование выбранной категории номера (домика)
+                            производится после перечисления предоплаты (30% от полной стоимости проживания).</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
                         <span class="pr-4 group-hover:text-brand transition-colors">Предоплата возвратная?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— бесплатная отмена бронирования возможна за 14 дней до забронированной даты, после - взимается 100% от размера предоплаты. В экстренном случае обращайтесь на электронную почту.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— бесплатная отмена бронирования возможна за 14
+                            дней до забронированной даты, после - взимается 100% от размера предоплаты. В экстренном
+                            случае обращайтесь на электронную почту.</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
-                        <span class="pr-4 group-hover:text-brand transition-colors">Возможен ранний заезд / поздний выезд из номера?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">Возможен ранний заезд / поздний
+                            выезд из номера?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— возможен, если номер свободен. Если ваш номер занят до 13:00 (после 11:00), то мы предложим вам разместить вещи с возможностью пользоваться душевой и туалетной комнатой. Для комфортного отдыха, просьба заранее при бронировании указывать необходимость раннего заезда (позднего выезда).</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— возможен, если номер свободен. Если ваш номер
+                            занят до 13:00 (после 11:00), то мы предложим вам разместить вещи с возможностью
+                            пользоваться душевой и туалетной комнатой. Для комфортного отдыха, просьба заранее при
+                            бронировании указывать необходимость раннего заезда (позднего выезда).</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
-                        <span class="pr-4 group-hover:text-brand transition-colors">Как рассчитываются дети с 0 до 3 лет?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">Как рассчитываются дети с 0 до 3
+                            лет?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— бесплатно, без предоставления места и питания. Детская кроватка до 3 лет оплата 700₽/сутки.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— бесплатно, без предоставления места и питания.
+                            Детская кроватка до 3 лет оплата 700₽/сутки.</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
                         <span class="pr-4 group-hover:text-brand transition-colors">У вас есть детская кроватка?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— детская кроватка до 4 лет — доп.оплата 500 руб./сутки. Просьба заранее при бронировании указывать в пожеланиях необходимость детской кроватки.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— детская кроватка до 4 лет — доп.оплата 500
+                            руб./сутки. Просьба заранее при бронировании указывать в пожеланиях необходимость детской
+                            кроватки.</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
-                        <span class="pr-4 group-hover:text-brand transition-colors">Возможно размещение с животными?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">Возможно размещение с
+                            животными?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-3 text-gray-600 leading-relaxed">— Возможность размещения исключительно с декоративными собаками, весом до 6 кг., предусмотрена в номерах категории «Номер с кухней (апарт.)» эко.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-3 text-gray-600 leading-relaxed">— Возможность размещения исключительно с
+                            декоративными собаками, весом до 6 кг., предусмотрена в номерах категории «Номер с кухней
+                            (апарт.)» эко.</p>
                         <p class="pb-3 text-gray-600 leading-relaxed">— Тариф на размещение: 800 руб./сутки.</p>
-                        <p class="pb-3 text-gray-600 leading-relaxed font-semibold">— Выгул собак на территории Базы отдыха «Русалочка» ЗАПРЕЩЕН.</p>
-                        <p class="pb-5"><a href="./images/rules.pdf" target="_blank" class="text-brand hover:text-teal-700 underline font-medium">Посмотреть полные правила</a></p>
+                        <p class="pb-3 text-gray-600 leading-relaxed font-semibold">— Выгул собак на территории Базы
+                            отдыха «Русалочка» ЗАПРЕЩЕН.</p>
+                        <p class="pb-5"><a href="./images/rules.pdf" target="_blank"
+                                class="text-brand hover:text-teal-700 underline font-medium">Посмотреть полные
+                                правила</a></p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
                         <span class="pr-4 group-hover:text-brand transition-colors">Что такое полный пансион?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— полный пансион - это система трехразового питания с фиксированным временем, в которую входят (завтрак, обед, ужин). Услуги кухни включены в стоимость проживания. На базе отдыха подаются несколько блюд на выбор.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— полный пансион - это система трехразового
+                            питания с фиксированным временем, в которую входят (завтрак, обед, ужин). Услуги кухни
+                            включены в стоимость проживания. На базе отдыха подаются несколько блюд на выбор.</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
-                        <span class="pr-4 group-hover:text-brand transition-colors">Скидка для постоянных клиентов?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">Скидка для постоянных
+                            клиентов?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— Постоянным гостям предоставляется скидка в размере 5% на стоимость проживания. В связи с ведением указанной акции с летнего сезона 2023 года, учет посещений Базы отдыха «Русалочка» ведется, начиная с летнего сезона 2022г. включительно. Данная опция не распространяется на цены по акциям.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— Постоянным гостям предоставляется скидка в
+                            размере 5% на стоимость проживания. В связи с ведением указанной акции с летнего сезона 2023
+                            года, учет посещений Базы отдыха «Русалочка» ведется, начиная с летнего сезона 2022г.
+                            включительно. Данная опция не распространяется на цены по акциям.</p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
-                    <button class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
-                        <span class="pr-4 group-hover:text-brand transition-colors">Как производится смена белья в номерах?</span>
-                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">Как производится смена белья в
+                            номерах?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
                     </button>
-                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— Смена белья в номерах категории №1, №2, №3: один раз в 4-5 дней по плану, либо по заявке, по мере необходимости. Инвентарь для уборки персональный в каждом номере или коттедже.</p>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— Смена белья в номерах категории №1, №2, №3: один
+                            раз в 4-5 дней по плану, либо по заявке, по мере необходимости. Инвентарь для уборки
+                            персональный в каждом номере или коттедже.</p>
                     </div>
                 </div>
             </div>
@@ -890,29 +1316,45 @@
 
             <!-- Контейнер для логотипов -->
             <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16">
-                
+
                 <!-- Партнер 1: Лукойл -->
-                <a href="https://lukoil.ru" target="_blank" rel="noopener noreferrer" 
-                   class="flex flex-col items-center justify-center max-w-[220px] group cursor-pointer">
-                    <img src="./images/lukoil.jpg" alt="Лукойл-Кубаньэнерго" 
-                         class="h-16 md:h-20 object-contain mb-4 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300">
-                    <span class="text-sm font-semibold text-gray-600 text-center group-hover:text-brand transition-colors">ООО «ЛУКОЙЛ-Кубаньэнерго»</span>
+                <a href="https://lukoil.ru" target="_blank" rel="noopener noreferrer"
+                    class="flex flex-col items-center justify-center max-w-[220px] group cursor-pointer">
+                    <img src="./images/lukoil.jpg" alt="Лукойл-Кубаньэнерго"
+                        class="h-16 md:h-20 object-contain mb-4 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300">
+                    <span
+                        class="text-sm font-semibold text-gray-600 text-center group-hover:text-brand transition-colors">ООО
+                        «ЛУКОЙЛ-Кубаньэнерго»</span>
                 </a>
 
                 <!-- Партнер 2: Пивоваренный завод -->
-                <a href="https://tihbeer.ru/#non-alcohol" target="_blank" rel="noopener noreferrer" 
-                   class="flex flex-col items-center justify-center max-w-[220px] group cursor-pointer">
-                    <img src="./images/tihpivzav.jpg" alt="Тихорецкий пивоваренный завод" 
-                         class="h-16 md:h-20 object-contain mb-4 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300">
-                    <span class="text-sm font-semibold text-gray-600 text-center group-hover:text-brand transition-colors">Тихорецкий пивоваренный завод</span>
+                <a href="https://tihbeer.ru/#non-alcohol" target="_blank" rel="noopener noreferrer"
+                    class="flex flex-col items-center justify-center max-w-[220px] group cursor-pointer">
+                    <img src="./images/tihpivzav.jpg" alt="Тихорецкий пивоваренный завод"
+                        class="h-16 md:h-20 object-contain mb-4 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300">
+                    <span
+                        class="text-sm font-semibold text-gray-600 text-center group-hover:text-brand transition-colors">Тихорецкий
+                        пивоваренный завод</span>
                 </a>
 
                 <!-- Партнер 3: Туризм.РФ -->
-                <a href="https://туризм.рф" target="_blank" rel="noopener noreferrer" 
-                   class="flex flex-col items-center justify-center max-w-[220px] group cursor-pointer">
-                    <img src="./images/turism.jpg" alt="Корпорация Туризм.РФ" 
-                         class="h-16 md:h-20 object-contain mb-4 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300">
-                    <span class="text-sm font-semibold text-gray-600 text-center group-hover:text-brand transition-colors">Корпорация Туризм.РФ</span>
+                <a href="https://туризм.рф" target="_blank" rel="noopener noreferrer"
+                    class="flex flex-col items-center justify-center max-w-[220px] group cursor-pointer">
+                    <img src="./images/turism.jpg" alt="Корпорация Туризм.РФ"
+                        class="h-16 md:h-20 object-contain mb-4 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300">
+                    <span
+                        class="text-sm font-semibold text-gray-600 text-center group-hover:text-brand transition-colors">Корпорация
+                        Туризм.РФ</span>
+                </a>
+
+                <!-- Партнер 4: MFTeam -->
+                <a href="https://mfteam.ru/" target="_blank" rel="noopener noreferrer"
+                    class="flex flex-col items-center justify-center max-w-[220px] group cursor-pointer">
+                    <img src="./images/bear.jpg" alt="Корпорация Туризм.РФ"
+                        class="h-16 md:h-20 object-contain mb-4 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300">
+                    <span
+                        class="text-sm font-semibold text-gray-600 text-center group-hover:text-brand transition-colors">Клуб
+                        единоборств Медведково</span>
                 </a>
 
             </div>
@@ -921,7 +1363,9 @@
 
     <section id="contacts" class="relative">
         <div class="h-[500px] w-full bg-gray-200">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A02a1fefbdd9aedb11362a4d3a3324e797e4b494ef0285376d06d115c7b419a4d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A02a1fefbdd9aedb11362a4d3a3324e797e4b494ef0285376d06d115c7b419a4d&amp;source=constructor"
+                width="100%" height="400" frameborder="0"></iframe>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1050,7 +1494,7 @@
             document.getElementById('gallery-modal-title').innerHTML = title;
             const gallery = document.getElementById('gallery-modal-images');
             const imgArray = Array.isArray(images) ? images : [images];
-            
+
             let galleryHTML = '';
             imgArray.forEach(src => {
                 galleryHTML += `
@@ -1200,7 +1644,8 @@
                                 </div>
                                 <div>
                                     <span class="text-sm text-gray-500 block mb-0.5">Мессенджер Max</span>
-                                    <a href="https://max.ru/u/f9LHodD0cOJq6c8zZEHemmxVOC0z5S_GmLtzO4JsKUGmmH12GI37MyWhrdw" target="_blank"
+                                    <a href="https://max.ru/u/f9LHodD0cOJq6c8zZEHemmxVOC0z5S_GmLtzO4JsKUGmmH12GI37MyWhrdw"
+                                        target="_blank"
                                         class="text-lg font-bold text-gray-900 hover:text-indigo-500 transition-colors">Написать
                                         нам</a>
                                 </div>
