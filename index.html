@@ -38,11 +38,15 @@
                 </a>
 
                 <nav class="hidden md:flex space-x-6 lg:space-x-8 font-medium text-gray-700">
-                    <a href="#about" class="hover:text-brand transition-colors">О нас</a>
-                    <a href="#rooms" class="hover:text-brand transition-colors">Номера</a>
-                    <a href="#infrastructure" class="hover:text-brand transition-colors">Инфраструктура</a>
-                    <a href="#contacts" class="hover:text-brand transition-colors">Контакты</a>
-                </nav>
+                <a href="#about" class="hover:text-brand transition-colors">О нас</a>
+                <a href="#rooms" class="hover:text-brand transition-colors">Номера</a>
+                <a href="#infrastructure" class="hover:text-brand transition-colors">Инфраструктура</a>
+                <a href="https://yandex.ru/maps/org/rusalochka/241387417775/reviews" target="_blank" class="flex items-center gap-1 hover:text-brand transition-colors">
+                    Отзывы
+                    <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+                <a href="#contacts" class="hover:text-brand transition-colors">Контакты</a>
+            </nav>
 
                 <div class="hidden lg:flex items-center gap-6 shrink-0">
                     <div class="flex flex-col text-right">
@@ -70,13 +74,14 @@
         <div id="mobile-menu"
             class="hidden absolute top-20 left-0 w-full bg-white border-t border-gray-100 shadow-lg md:hidden flex-col">
             <nav class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700 text-lg">
-                <a href="#about" class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">О
-                    нас</a>
-                <a href="#rooms"
-                    class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Номера</a>
-                <a href="#infrastructure"
-                    class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Инфраструктура</a>
-                <a href="#contacts" class="mobile-link hover:text-brand transition-colors pb-2">Контакты</a>
+                <a href="#about" class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">О нас</a>
+            <a href="#rooms" class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Номера</a>
+            <a href="#infrastructure" class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Инфраструктура</a>
+            <a href="https://yandex.ru/maps/org/rusalochka/241387417775/reviews" target="_blank" class="mobile-link flex items-center justify-between hover:text-brand transition-colors border-b border-gray-50 pb-2">
+                Отзывы (Яндекс)
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+            <a href="#contacts" class="mobile-link hover:text-brand transition-colors pb-2">Контакты</a>
                 <div class="pt-2 flex flex-col gap-3">
                     <a href="tel:+79184774366" class="font-bold text-xl text-gray-900 text-center">8 (918) 47-74-366</a>
                     <a href="#rooms"
@@ -171,72 +176,49 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div onclick="openGalleryModal('Первая линия', ['./images/beach/1.jpg', './images/beach/2.jpg', './images/beach/3.jpg'])"
-                    class="cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div
-                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
+                <div onclick="openGalleryModal('Первая линия', [ './videos/1.webm','./images/beach/1.jpg','./images/beach/2.jpg','./images/beach/3.jpg'])"
+                    class="cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 text-center group border border-gray-100 relative overflow-hidden">
+
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Первая
-                        линия</h3>
-                    <p class="text-gray-600 leading-relaxed">Чистый песчаный пляж станицы Благовещенской находится всего
-                        в паре минут неспешного шага.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Первая линия</h3>
+                    <p class="text-gray-600 leading-relaxed">Чистый песчаный пляж находится всего в паре минут. Посмотрите наши фото и видео!</p>
                 </div>
 
                 <a href="#infrastructure"
                     class="block cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div
-                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
-                            </path>
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Бассейн
-                    </h3>
-                    <p class="text-gray-600 leading-relaxed">Большой бассейн с кристально чистой водой, детской зоной и
-                        удобными шезлонгами.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Бассейн</h3>
+                    <p class="text-gray-600 leading-relaxed">Большой бассейн с кристально чистой водой, детской зоной и удобными шезлонгами.</p>
                 </a>
 
                 <a href="#infrastructure"
                     class="block cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div
-                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                            </path>
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Для детей
-                    </h3>
-                    <p class="text-gray-600 leading-relaxed">Игровые площадки, батуты и веселая анимация. Вашим детям
-                        точно не будет скучно!</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Для детей</h3>
+                    <p class="text-gray-600 leading-relaxed">Игровые площадки, спортивный инвентарь и веселая анимация. Вашим детям точно не будет скучно!</p>
                 </a>
 
                 <div onclick="openGalleryModal('Вкусное питание', ['./images/food/1.webp', './images/food/2.webp', './images/food/3.webp'])"
                     class="cursor-pointer bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 text-center group border border-gray-100">
-                    <div
-                        class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
-                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
-                            </path>
+                    <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-brand transition-colors duration-300">
+                        <svg class="w-8 h-8 text-brand group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Вкусное
-                        питание</h3>
-                    <p class="text-gray-600 leading-relaxed">Возможность заказать комплексное питание (завтрак, обед,
-                        ужин) в нашей уютной столовой.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand transition-colors">Вкусное питание</h3>
+                    <p class="text-gray-600 leading-relaxed">Возможность заказать комплексное питание (завтрак, обед, ужин) в нашей уютной столовой.</p>
                 </div>
             </div>
         </div>
@@ -260,6 +242,7 @@
 
                 <div id="rooms-carousel"
                     class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory no-scrollbar scroll-smooth">
+                    
                     <div
                         class="snap-start shrink-0 w-[85vw] sm:w-[350px] lg:w-[400px] bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col text-center md:text-left">
                         <div class="relative h-56 overflow-hidden cursor-pointer group/img"
@@ -278,12 +261,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">Номер с кухней
                                     (апарт.)<br>2-х местный + доп.место</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('Номер с кухней (апарт.)<br>2-х местный + доп.место', '2-х местный + доп.место', 'от 0 000 ₽', ['./images/Apart2mKitchen/Apart2mKitchen1.webp', './images/Apart2mKitchen/Apart2mKitchen2.webp', './images/Apart2mKitchen/Apart2mKitchen3.webp', './images/Apart2mKitchen/Apart2mKitchen4.webp', './images/Apart2mKitchen/Apart2mKitchen5.webp', './images/Apart2mKitchen/Apart2mKitchen6.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -306,12 +289,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">Номер с кухней
                                     (апарт.)<br>3-х местный + доп.место</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('Номер с кухней (апарт.)', '3-х местный + доп.место', 'от 0 000 ₽', ['./images/Apart3mKitchen/Apart3mKitchen1.webp', './images/Apart3mKitchen/Apart3mKitchen2.webp', './images/Apart3mKitchen/Apart3mKitchen3.webp', './images/Apart3mKitchen/Apart3mKitchen4.webp', './images/Apart3mKitchen/Apart3mKitchen5.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -334,12 +317,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">Эко-домик
                                     1-комнатный<br>2-х местный + доп.место</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('Эко-домик 1-комнатный', '2-х местный + доп.место', 'от 0 000 ₽', ['./images/3/1.webp', './images/3/2.webp', './images/3/3.webp', './images/3/4.webp', './images/3/5.webp', './images/3/6.webp', './images/3/7.webp', './images/3/8.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -362,12 +345,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">Эко-домик
                                     2-комнатный<br>3-х местный + доп.место</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('Эко-домик 2-комнатный', '3-х местный + доп.место', 'от 0 000 ₽', ['./images/4/1.webp', './images/4/2.webp', './images/4/3.webp', './images/4/4.webp', './images/4/5.webp', './images/4/6.webp', './images/4/7.webp', './images/4/8.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -390,15 +373,16 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ кирпичный
                                     домик<br>3-х местный</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('СТАНДАРТ кирпичный домик', '3-х местный', 'от 0 000 ₽', ['./images/5/1.webp', './images/5/2.webp', './images/5/3.webp', './images/5/4.webp', './images/5/5.webp', './images/5/6.webp', './images/5/7.webp', './images/5/8.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
+
                     <div
                         class="snap-start shrink-0 w-[85vw] sm:w-[350px] lg:w-[400px] bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col text-center md:text-left">
                         <div class="relative h-56 overflow-hidden cursor-pointer group/img"
@@ -417,12 +401,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ Деревянный
                                     домик<br>2-х местный</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('СТАНЛАРТ Деревянный домик', '2-х местный', 'от 0 000 ₽', ['./images/6/1.webp', './images/6/2.webp', './images/6/3.webp', './images/6/4.webp', './images/6/5.webp', './images/6/6.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -445,12 +429,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>2-х местный
                                 </h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('СТАНДАРТ', '2-х местный', 'от 0 000 ₽', ['./images/7/1.webp', './images/7/2.webp', './images/7/3.webp', './images/7/4.webp', './images/7/5.webp', './images/7/6.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -473,12 +457,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>2-х местный +
                                     доп.место</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('СТАНДАРТ', '2-х местный + доп.место', 'от 0 000 ₽', ['./images/8/1.webp', './images/8/2.webp', './images/8/3.webp', './images/8/4.webp', './images/8/5.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -501,12 +485,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>3-х местный +
                                     доп.место</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('СТАНДАРТ', '3-х местный + доп.место', 'от 0 000 ₽', ['./images/9/1.webp', './images/9/2.webp', './images/9/3.webp', './images/9/4.webp', './images/9/5.webp', './images/9/6.webp', './images/9/7.webp', './images/9/8.webp', './images/9/9.webp', './images/9/10.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -529,12 +513,12 @@
                                 <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">СТАНДАРТ<br>4-х местный +
                                     доп.место</h3>
                             </div>
-                            <div class="w-full mt-6">
-                                <div class="text-xs text-gray-400 mb-1">Стоимость за сутки</div>
-                                <div class="text-2xl font-bold text-gray-900 mb-4">от 0 000 ₽</div>
+                            <div class="w-full mt-6 flex flex-col gap-3">
                                 <button
                                     onclick="openRoomModal('СТАНДАРТ', '4-х местный + доп.место', 'от 0 000 ₽', ['./images/10/1.webp', './images/10/2.webp', './images/10/3.webp', './images/10/4.webp', './images/10/5.webp', './images/10/6.webp', './images/10/7.webp', './images/10/8.webp', './images/10/9.webp', './images/10/10.webp', './images/10/11.webp', './images/10/12.webp', './images/10/13.webp', './images/10/14.webp'])"
                                     class="w-full bg-gray-100 hover:bg-brand hover:text-white text-gray-800 font-semibold px-5 py-3 rounded-lg transition-colors">Подробнее</button>
+                                <a href="https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru" target="_blank" 
+                                    class="w-full text-center bg-brand hover:bg-teal-600 text-white font-semibold px-5 py-3 rounded-lg shadow-md transition-colors">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -554,6 +538,97 @@
             </div>
         </div>
     </section>
+
+    <div id="room-modal"
+        class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <div id="room-modal-content"
+            class="relative w-full max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 flex flex-col md:flex-row max-h-[90vh]">
+
+            <button onclick="closeRoomModal()"
+                class="absolute top-4 right-4 z-20 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-800 hover:text-red-500 hover:bg-white shadow-md transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <div class="w-full md:w-1/2 h-64 md:h-[500px] bg-gray-900 relative group/modalslider">
+                <div id="modal-gallery"
+                    class="flex overflow-x-auto h-full snap-x snap-mandatory no-scrollbar scroll-smooth">
+                </div>
+
+                <button onclick="scrollModalGallery(-1)"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+                <button onclick="scrollModalGallery(1)"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand hover:border-brand focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="w-full md:w-1/2 p-6 md:p-8 flex flex-col overflow-y-auto bg-white">
+                <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Название номера</h3>
+                <div class="inline-block bg-teal-50 text-brand font-semibold px-3 py-1 rounded-lg w-max mb-6">
+                    Вместимость: <span id="modal-capacity"></span>
+                </div>
+
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Просторный и комфортабельный номер, идеально подходящий для вашего отдыха. Внутри есть всё
+                    необходимое для длительного и уютного проживания на нашей базе.
+                </p>
+
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Удобства в номере:</h4>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-sm text-gray-700">
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg> Кондиционер</li>
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg> Холодильник</li>
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg> Телевизор</li>
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg> Собственный санузел</li>
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg> Бесплатный Wi-Fi</li>
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg> Набор полотенец</li>
+                </ul>
+
+                <div class="mt-auto pt-6 border-t border-gray-100 flex justify-end">
+                    
+                    <span id="modal-price" class="hidden"></span>
+
+                    <button onclick="window.open('https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru', '_blank'); closeRoomModal();"
+                        class="w-full sm:w-auto ml-auto bg-brand hover:bg-teal-600 text-white font-bold py-3.5 px-10 rounded-xl shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5">
+                        Перейти к бронированию
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="room-modal"
         class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 opacity-0 transition-opacity duration-300">
@@ -707,10 +782,16 @@
                         <div class="relative group/infraslider w-full h-[320px] sm:h-96 lg:h-[500px] rounded-3xl shadow-xl overflow-hidden bg-white border-4 border-white">
                             <div id="pool-carousel" class="flex overflow-x-auto h-full snap-x snap-mandatory no-scrollbar scroll-smooth">
                                 <div class="shrink-0 w-full h-full snap-center relative">
-                                    <img src="./images/pool.jpg" alt="Бассейн" class="w-full h-full object-cover">
+                                    <img src="./images/pool/pool.webp" alt="Бассейн" class="w-full h-full object-cover">
                                 </div>
                                 <div class="shrink-0 w-full h-full snap-center relative">
-                                    <img src="https://picsum.photos/id/404/800/600" alt="Бассейн" class="w-full h-full object-cover">
+                                    <img src="./images/pool/1.webp" alt="Бассейн" class="w-full h-full object-cover">
+                                </div>
+                                <div class="shrink-0 w-full h-full snap-center relative">
+                                    <img src="./images/pool/2.webp" alt="Бассейн" class="w-full h-full object-cover">
+                                </div>
+                                <div class="shrink-0 w-full h-full snap-center relative">
+                                    <img src="./images/pool/3.webp" alt="Бассейн" class="w-full h-full object-cover">
                                 </div>
                             </div>
 
@@ -812,7 +893,13 @@
                                     <img src="./images/kids.jpg" alt="Детский отдых" class="w-full h-full object-cover">
                                 </div>
                                 <div class="shrink-0 w-full h-full snap-center relative">
-                                    <img src="https://picsum.photos/id/417/800/600" alt="Детский отдых" class="w-full h-full object-cover">
+                                    <img src="./images/playground/1.webp" alt="Детский отдых" class="w-full h-full object-cover">
+                                </div>
+                                <div class="shrink-0 w-full h-full snap-center relative">
+                                    <img src="./images/playground/2.webp" alt="Детский отдых" class="w-full h-full object-cover">
+                                </div>
+                                <div class="shrink-0 w-full h-full snap-center relative">
+                                    <img src="./images/playground/3.webp" alt="Детский отдых" class="w-full h-full object-cover">
                                 </div>
                             </div>
 
@@ -1133,8 +1220,7 @@
                     </button>
                     <div
                         class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— бесплатно, без предоставления места и питания.
-                            Детская кроватка до 3 лет оплата 700₽/сутки.</p>
+                        <p class="pb-5 text-gray-600 leading-relaxed">— бесплатно, без предоставления места и питания.</p>
                     </div>
                 </div>
 
@@ -1151,9 +1237,25 @@
                     </button>
                     <div
                         class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
-                        <p class="pb-5 text-gray-600 leading-relaxed">— детская кроватка до 4 лет — доп.оплата 500
-                            руб./сутки. Просьба заранее при бронировании указывать в пожеланиях необходимость детской
+                        <p class="pb-5 text-gray-600 leading-relaxed">— детская кроватка до 3 лет оплата 700₽/сутки. Просьба заранее при бронировании указывать в пожеланиях необходимость детской
                             кроватки.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">У вас есть услуги  прачечной?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— Да есть, стоимость услуги стиральной машинки (загрузка: 4 кг) с вашим порошком-400₽, с нашим порошком-450₽ и с нашим порошком и гелем-500₽, так же есть услуга сушильной машины ( загрузка:4 кг) стоимость-350₽</p>
                     </div>
                 </div>
 
@@ -1301,38 +1403,34 @@
         </div>
     </section>
 
-    <section id="contacts" class="relative">
-        <div class="h-[500px] w-full bg-gray-200">
-            <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A02a1fefbdd9aedb11362a4d3a3324e797e4b494ef0285376d06d115c7b419a4d&amp;source=constructor"
-                width="100%" height="400" frameborder="0"></iframe>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-                class="bg-white rounded-2xl shadow-2xl p-8 md:p-10 relative -mt-32 z-20 max-w-xl mx-auto lg:ml-0 lg:-mt-80 border border-gray-100">
-                <h3 class="text-3xl font-bold text-gray-900 mb-6">Ждем вас в гости!</h3>
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="bg-teal-50 p-3 rounded-full text-brand">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-500 font-medium">Адрес</p>
-                            <p class="text-lg font-semibold text-gray-900">Краснодарский край, г. Анапа, <br>ст.
-                                Благовещенская</p>
-                        </div>
-                    </div>
-                </div>
+    <section id="contacts" class="w-full my-12 px-4 sm:px-6 lg:px-8">
+    
+    <div class="w-full mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        
+        <div class="p-8 flex items-center justify-center gap-6 border-b border-gray-100">
+            <div class="w-14 h-14 bg-teal-50 rounded-full flex items-center justify-center text-teal-600 shrink-0">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+            </div>
+            <div class="text-center sm:text-left">
+                <h4 class="text-2xl font-bold text-gray-900 mb-1">Ждем вас в гости!</h4>
+                <p class="text-base text-gray-500 font-medium">База отдыха «Русалочка» • ст. Благовещенская</p>
             </div>
         </div>
-    </section>
+
+        <div class="h-[500px] w-full">
+            <iframe 
+                src="https://yandex.ru/map-widget/v1/?mode=search&text=база+отдыха+Русалочка+станица+Благовещенская&oid=241387417775&z=15" 
+                class="w-full h-full" 
+                frameborder="0" 
+                allowfullscreen="true">
+            </iframe>
+        </div>
+        
+    </div>
+</section>
 
     <script>
         // --- Виджет Bnovo ---
@@ -1429,20 +1527,33 @@
             }
         });
 
-        // --- Логика модального окна для галереи ---
-        function openGalleryModal(title, images) {
+       // --- Логика модального окна для Галереи (с поддержкой видео) ---
+        function openGalleryModal(title, mediaArray) {
             document.getElementById('gallery-modal-title').innerHTML = title;
             const gallery = document.getElementById('gallery-modal-images');
-            const imgArray = Array.isArray(images) ? images : [images];
-
+            const items = Array.isArray(mediaArray) ? mediaArray : [mediaArray];
+            
             let galleryHTML = '';
-            imgArray.forEach(src => {
-                galleryHTML += `
-                    <div class="shrink-0 w-full h-full snap-center relative">
-                        <img src="${src}" alt="Фото" class="w-full h-full object-cover">
-                    </div>
-                `;
+            items.forEach(src => {
+                // Проверяем, является ли файл видео (.mp4, .webm, .mov)
+                if(src.toLowerCase().match(/\.(mp4|webm|mov)$/)) {
+                    galleryHTML += `
+                        <div class="shrink-0 w-full h-full snap-center relative flex items-center justify-center bg-black">
+                            <video controls class="w-full h-full object-contain" preload="metadata">
+                                <source src="${src}" type="video/mp4">
+                                Ваш браузер не поддерживает воспроизведение видео.
+                            </video>
+                        </div>
+                    `;
+                } else {
+                    galleryHTML += `
+                        <div class="shrink-0 w-full h-full snap-center relative flex items-center justify-center bg-black">
+                            <img src="${src}" alt="Фото" class="w-full h-full object-contain">
+                        </div>
+                    `;
+                }
             });
+            
             gallery.innerHTML = galleryHTML;
             gallery.scrollLeft = 0;
 
@@ -1463,6 +1574,10 @@
             const modal = document.getElementById('gallery-modal');
             const content = document.getElementById('gallery-modal-content');
 
+            // Находим все видео в модалке и ставим их на паузу при закрытии
+            const videos = document.getElementById('gallery-modal-images').querySelectorAll('video');
+            videos.forEach(video => video.pause());
+
             modal.classList.add('opacity-0');
             content.classList.add('scale-95');
 
@@ -1477,6 +1592,12 @@
             const container = document.getElementById('gallery-modal-images');
             const scrollAmount = container.clientWidth;
             container.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+            
+            // Ставим видео на паузу, если пользователь перелистнул слайд
+            setTimeout(() => {
+                const videos = container.querySelectorAll('video');
+                videos.forEach(video => video.pause());
+            }, 300);
         }
 
         document.getElementById('gallery-modal').addEventListener('click', function (e) {
@@ -1515,6 +1636,19 @@
                 }
             });
         });
+
+        // --- ПРОКРУТКА ДЛЯ ИНФРАСТРУКТУРЫ (Бассейн, Дети) ---
+        function scrollInfraGallery(carouselId, direction) {
+            const container = document.getElementById(carouselId);
+            if (!container) return;
+            
+            // Берем ширину слайда и добавляем 20px по направлению движения,
+            // чтобы CSS-магнит точно перетянул нас на следующую картинку, а не откинул назад
+            const scrollAmount = container.clientWidth;
+            container.scrollBy({ left: (scrollAmount * direction) + (direction * 20), behavior: 'smooth' });
+        }
+
+
 
     </script>
 
