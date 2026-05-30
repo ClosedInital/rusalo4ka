@@ -1468,11 +1468,35 @@
             });
         });
 
-        // --- Модальное окно ---
+       // --- Модальное окно ---
         function openRoomModal(title, capacity, price, images) {
             document.getElementById('modal-title').innerHTML = title;
             document.getElementById('modal-capacity').innerText = capacity;
             document.getElementById('modal-price').innerText = price;
+
+            // --- Список удобств (Чайник и Фен теперь включены для ВСЕХ номеров) ---
+            const amenitiesLists = document.querySelectorAll('#room-modal-content ul');
+            let amenitiesHTML = `
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Кондиционер</li>
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Холодильник</li>
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Телевизор</li>
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Собственный санузел</li>
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Бесплатный Wi-Fi</li>
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Набор полотенец</li>
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Чайник</li>
+                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Фен</li>
+            `;
+
+            // Бассейн добавляем только выбранным категориям
+            if (title.includes('Эко-домик') || title.includes('Номер с кухней')) {
+                amenitiesHTML += `
+                    <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Пользование бассейном</li>
+                `;
+            }
+
+            // Обновляем список в верстке
+            amenitiesLists.forEach(list => list.innerHTML = amenitiesHTML);
+            // ---------------------------------------------------------------------
 
             const gallery = document.getElementById('modal-gallery');
             const imgArray = Array.isArray(images) ? images : [images];
