@@ -45,22 +45,32 @@
                     Отзывы
                     <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </a>
+                <a href="#" onclick="openVacanciesModal(); return false;" class="hover:text-brand transition-colors">Вакансии</a>
                 <a href="#contacts" class="hover:text-brand transition-colors">Контакты</a>
             </nav>
 
                 <div class="hidden lg:flex items-center gap-6 shrink-0">
                     <div class="flex flex-col text-right">
                         <a href="tel:+79184774366"
-                            class="font-bold text-lg text-gray-900 hover:text-brand transition-colors">8 (918)
-                            47-74-366</a>
-                        <!--<span class="text-xs text-gray-500">Звонок по России бесплатный</span>-->
+                            class="font-bold text-lg text-gray-900 hover:text-brand transition-colors leading-none mb-1.5">8 (918) 47-74-366</a>
+                        
+                        <div class="flex justify-end gap-2">
+                            <a href="https://wa.me/79184774366" target="_blank" class="w-6 h-6 bg-[#25D366] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-sm" title="WhatsApp">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.996 2.001c-5.525 0-10.006 4.478-10.006 10.004 0 1.76.456 3.483 1.323 5.006L2.003 22.01l5.127-1.345a9.965 9.965 0 0 0 4.866 1.258h.004c5.521 0 10.004-4.478 10.004-10.006 0-5.524-4.48-10.002-10.008-10.016zm.004 18.337h-.003a8.284 8.284 0 0 1-4.223-1.152l-.303-.18-3.141.824.84-3.064-.197-.314a8.293 8.293 0 0 1-1.27-4.453c0-4.582 3.736-8.318 8.324-8.318 2.222.002 4.31.868 5.88 2.44 1.57 1.571 2.435 3.662 2.433 5.882-.004 4.58-3.74 8.317-8.335 8.333zm4.568-6.223c-.251-.126-1.482-.732-1.712-.816-.23-.083-.399-.126-.566.126-.168.252-.647.816-.793.984-.147.168-.294.188-.545.062-1.083-.538-2.046-1.189-2.855-2.355-.21-.302-.02-.439.105-.564.104-.105.23-.272.356-.418.126-.126.168-.231.252-.377.083-.147.042-.272-.021-.398-.063-.126-.567-1.362-.776-1.867-.205-.494-.413-.427-.567-.435l-.482-.008c-.168 0-.441.063-.672.314-.23.251-.88 .86-.88 2.096 0 1.237.902 2.434 1.028 2.602.126.168 1.776 2.71 4.301 3.8.604.26 1.074.417 1.442.534.606.192 1.158.165 1.593.1.485-.072 1.482-.605 1.691-1.189.21-.584.21-1.084.147-1.189-.063-.105-.231-.168-.482-.294z"></path></svg>
+                            </a>
+                            <a href="https://t.me/BazaRusalochka" target="_blank" class="w-6 h-6 bg-[#0088cc] text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-sm" title="Telegram">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0l-3.85 2.42c-.52.34-1.02.5-1.46.49-.49-.01-1.42-.27-2.11-.49-.86-.28-1.54-.43-1.48-.92.03-.26.39-.53 1.07-.81 4.19-1.82 6.98-3.02 8.36-3.6 3.97-1.65 4.81-1.93 5.35-1.94.12 0 .39.03.53.15.11.1.15.24.16.37-.02.13-.01.27-.02.43z"></path></svg>
+                            </a>
+                            <a href="https://max.ru/u/f9LHodD0cOJq6c8zZEHemmxVOC0z5S_GmLtzO4JsKUGmmH12GI37MyWhrdw" target="_blank" class="w-6 h-6 bg-indigo-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-sm" title="Max">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                            </a>
+                        </div>
                     </div>
                     <a href="#rooms"
                         class="bg-brand hover:bg-teal-700 text-white px-6 py-2.5 rounded-lg font-semibold shadow-md transition-all hover:shadow-lg transform hover:-translate-y-0.5">
                         Бронировать
                     </a>
                 </div>
-
                 <button id="mobile-menu-btn"
                     class="md:hidden flex items-center justify-center p-2 text-gray-700 hover:text-brand focus:outline-none z-50">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -81,9 +91,23 @@
                 Отзывы (Яндекс)
                 <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
             </a>
+            <a href="#" onclick="openVacanciesModal(); return false;" class="mobile-link hover:text-brand transition-colors border-b border-gray-50 pb-2">Вакансии</a>
             <a href="#contacts" class="mobile-link hover:text-brand transition-colors pb-2">Контакты</a>
                 <div class="pt-2 flex flex-col gap-3">
-                    <a href="tel:+79184774366" class="font-bold text-xl text-gray-900 text-center">8 (918) 47-74-366</a>
+                    <a href="tel:+79184774366" class="font-bold text-xl text-gray-900 text-center mb-1">8 (918) 47-74-366</a>
+                    
+                    <div class="flex justify-center gap-4 mb-2">
+                        <a href="https://wa.me/79184774366" target="_blank" class="w-10 h-10 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.996 2.001c-5.525 0-10.006 4.478-10.006 10.004 0 1.76.456 3.483 1.323 5.006L2.003 22.01l5.127-1.345a9.965 9.965 0 0 0 4.866 1.258h.004c5.521 0 10.004-4.478 10.004-10.006 0-5.524-4.48-10.002-10.008-10.016zm.004 18.337h-.003a8.284 8.284 0 0 1-4.223-1.152l-.303-.18-3.141.824.84-3.064-.197-.314a8.293 8.293 0 0 1-1.27-4.453c0-4.582 3.736-8.318 8.324-8.318 2.222.002 4.31.868 5.88 2.44 1.57 1.571 2.435 3.662 2.433 5.882-.004 4.58-3.74 8.317-8.335 8.333zm4.568-6.223c-.251-.126-1.482-.732-1.712-.816-.23-.083-.399-.126-.566.126-.168.252-.647.816-.793.984-.147.168-.294.188-.545.062-1.083-.538-2.046-1.189-2.855-2.355-.21-.302-.02-.439.105-.564.104-.105.23-.272.356-.418.126-.126.168-.231.252-.377.083-.147.042-.272-.021-.398-.063-.126-.567-1.362-.776-1.867-.205-.494-.413-.427-.567-.435l-.482-.008c-.168 0-.441.063-.672.314-.23.251-.88 .86-.88 2.096 0 1.237.902 2.434 1.028 2.602.126.168 1.776 2.71 4.301 3.8.604.26 1.074.417 1.442.534.606.192 1.158.165 1.593.1.485-.072 1.482-.605 1.691-1.189.21-.584.21-1.084.147-1.189-.063-.105-.231-.168-.482-.294z"></path></svg>
+                        </a>
+                        <a href="https://t.me/BazaRusalochka" target="_blank" class="w-10 h-10 bg-[#0088cc] text-white rounded-full flex items-center justify-center shadow-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.18-.08-.05-.19-.02-.27 0l-3.85 2.42c-.52.34-1.02.5-1.46.49-.49-.01-1.42-.27-2.11-.49-.86-.28-1.54-.43-1.48-.92.03-.26.39-.53 1.07-.81 4.19-1.82 6.98-3.02 8.36-3.6 3.97-1.65 4.81-1.93 5.35-1.94.12 0 .39.03.53.15.11.1.15.24.16.37-.02.13-.01.27-.02.43z"></path></svg>
+                        </a>
+                        <a href="https://max.ru/u/f9LHodD0cOJq6c8zZEHemmxVOC0z5S_GmLtzO4JsKUGmmH12GI37MyWhrdw" target="_blank" class="w-10 h-10 bg-indigo-500 text-white rounded-full flex items-center justify-center shadow-sm">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                        </a>
+                    </div>
+
                     <a href="#rooms"
                         class="mobile-link bg-brand text-center text-white px-6 py-3 rounded-lg font-semibold shadow-md">
                         Забронировать
@@ -124,28 +148,32 @@
             </a>
 
             <!-- ВИДЖЕТ БРОНИРОВАНИЯ -->
-            <div id="booking-widget" class="relative z-30 text-left max-w-5xl mx-auto mt-16">
-                <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 border border-gray-100">
-                    <form id="bnovo-direct-form" class="flex flex-col md:flex-row items-end gap-4">
-                        <div class="flex-1 w-full">
+            <div id="booking-widget" class="relative z-30 text-left max-w-5xl mx-auto mt-16 w-full">
+                <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 border border-gray-100 overflow-hidden">
+                    <!-- Заменили items-end на md:items-end, чтобы на мобилках поля не прижимались вправо -->
+                    <form id="bnovo-direct-form" class="flex flex-col md:flex-row md:items-end gap-4 w-full">
+                        
+                        <!-- Заменили flex-1 на md:flex-1 и добавили min-w-0 для предотвращения вылезания -->
+                        <div class="w-full md:flex-1 min-w-0">
                             <label for="dfrom"
                                 class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Заезд</label>
+                            <!-- Добавлены appearance-none, block и box-border для сброса стилей iOS -->
                             <input type="date" id="dfrom" required
-                                class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
+                                class="block w-full box-border appearance-none px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
                         </div>
 
-                        <div class="flex-1 w-full">
+                        <div class="w-full md:flex-1 min-w-0">
                             <label for="dto"
                                 class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Выезд</label>
                             <input type="date" id="dto" required
-                                class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
+                                class="block w-full box-border appearance-none px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
                         </div>
 
-                        <div class="w-full md:w-32">
+                        <div class="w-full md:w-32 min-w-0">
                             <label for="adults"
                                 class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 pl-1">Гости</label>
                             <select id="adults"
-                                class="w-full px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium appearance-none cursor-pointer">
+                                class="block w-full box-border appearance-none px-4 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all text-gray-900 font-medium cursor-pointer">
                                 <option value="1">1 чел.</option>
                                 <option value="2" selected>2 чел.</option>
                                 <option value="3">3 чел.</option>
@@ -154,7 +182,7 @@
                             </select>
                         </div>
 
-                        <div class="w-full md:w-auto mt-4 md:mt-0">
+                        <div class="w-full md:w-auto mt-2 md:mt-0">
                             <button type="submit"
                                 class="w-full md:w-auto bg-brand hover:bg-teal-600 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 whitespace-nowrap">
                                 Найти номер
@@ -821,7 +849,7 @@
 
                             <p class="text-sm text-gray-600 mb-4 px-2">Остальные гости могут приобрести доступ к бассейну за дополнительную плату в администрации:</p>
 
-                            <<div class="overflow-x-auto mb-6 bg-gray-50 rounded-xl border border-gray-100">
+                            <div class="overflow-x-auto mb-6 bg-gray-50 rounded-xl border border-gray-100">
                                 <table class="w-full text-left text-sm">
                                     <thead>
                                         <tr class="bg-gray-100/50 text-gray-500 leading-snug">
@@ -1239,6 +1267,27 @@
                         class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
                         <p class="pb-5 text-gray-600 leading-relaxed">— детская кроватка до 3 лет оплата 700₽/сутки. Просьба заранее при бронировании указывать в пожеланиях необходимость детской
                             кроватки.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="faq-item bg-white border border-gray-200 rounded-2xl shadow-sm transition-all duration-300 overflow-hidden">
+                    <button
+                        class="faq-button w-full text-left px-6 py-5 font-bold text-gray-900 flex justify-between items-center focus:outline-none group">
+                        <span class="pr-4 group-hover:text-brand transition-colors">Часы питания в столовой?</span>
+                        <svg class="faq-icon w-6 h-6 text-gray-400 group-hover:text-brand transform transition-transform duration-300 shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6">
+                        <p class="pb-5 text-gray-600 leading-relaxed">— Наши часы питания: 
+<br>-завтрак с 8:00 до 10:00
+<br>-обед с 13:00 до 15:00 
+<br>-ужин с 18:00 до 20:00 
+<br>Все остальное время работает столовая за доп.плату.</p>
                     </div>
                 </div>
 
@@ -1672,6 +1721,55 @@
             container.scrollBy({ left: (scrollAmount * direction) + (direction * 20), behavior: 'smooth' });
         }
 
+        // --- Логика Вакансий ---
+        function openVacanciesModal() {
+            const modal = document.getElementById('vacancies-modal');
+            const content = document.getElementById('vacancies-modal-content');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                content.classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeVacanciesModal() {
+            const modal = document.getElementById('vacancies-modal');
+            const content = document.getElementById('vacancies-modal-content');
+            modal.classList.add('opacity-0');
+            content.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        document.getElementById('vacancies-modal').addEventListener('click', function (e) {
+            if (e.target === this) closeVacanciesModal();
+        });
+
+        // --- Логика выезжающей панели Акций ---
+        function togglePromoPanel() {
+            const panel = document.getElementById('promo-panel');
+            const overlay = document.getElementById('promo-overlay');
+            
+            if (panel.classList.contains('-translate-x-full')) {
+                // Открываем
+                panel.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+                document.body.style.overflow = 'hidden'; // Убираем скролл сайта
+            } else {
+                // Закрываем
+                panel.classList.add('-translate-x-full');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+                document.body.style.overflow = '';
+            }
+        }
+
 
 
     </script>
@@ -1899,6 +1997,120 @@
         </div>
     </section>
 
+    <div id="vacancies-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+        <div id="vacancies-modal-content" class="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 p-6 md:p-8">
+            <button onclick="closeVacanciesModal()" class="absolute top-4 right-4 z-20 w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center text-gray-800 hover:text-red-500 hover:bg-gray-100 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Открытые вакансии</h3>
+            <ul class="space-y-4 mb-6 text-gray-700 font-medium">
+                <li class="flex items-center gap-3"><svg class="w-6 h-6 text-brand shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Сотрудник на бассейн</li>
+                <li class="flex items-center gap-3"><svg class="w-6 h-6 text-brand shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Горничные</li>
+                <li class="flex items-center gap-3"><svg class="w-6 h-6 text-brand shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Слесарь-электрик</li>
+                <li class="flex items-center gap-3"><svg class="w-6 h-6 text-brand shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Слесарь-сантехник</li>
+                <li class="flex items-center gap-3"><svg class="w-6 h-6 text-brand shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Аниматор (детский и взрослый)</li>
+            </ul>
+            <div class="bg-gradient-to-br from-teal-50 to-blue-50 p-5 rounded-xl border border-teal-100 text-center shadow-inner">
+                <p class="font-semibold text-gray-600 mb-1">Условия работы:</p>
+                <p class="text-brand font-bold text-lg leading-tight">Заработная плата +<br>проживание + питание</p>
+            </div>
+            <div class="mt-8 text-center">
+                <a href="tel:+79184774366" class="inline-block w-full bg-brand hover:bg-teal-600 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg transition-all hover:-translate-y-0.5">Откликнуться по телефону</a>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="togglePromoPanel()" class="fixed left-0 top-1/3 z-[60] bg-accent text-white px-2 py-4 rounded-r-xl shadow-lg hover:pr-4 transition-all flex items-center justify-center group border border-l-0 border-orange-400">
+        <span class="font-bold tracking-widest rotate-180 drop-shadow-md" style="writing-mode: vertical-rl;">АКЦИИ %</span>
+    </button>
+
+    <div id="promo-panel" class="fixed left-0 top-0 h-full w-[320px] max-w-[85vw] bg-white z-[70] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+        <div class="bg-accent p-6 flex justify-between items-center text-white shadow-md">
+            <h3 class="text-xl font-bold flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+                Спецпредложения
+            </h3>
+            <button onclick="togglePromoPanel()" class="w-8 h-8 flex items-center justify-center hover:bg-orange-600 rounded-full transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div class="p-6 flex-1 overflow-y-auto bg-gray-50" id="promo-content">
+            
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 mb-5 relative overflow-hidden hover:shadow-md transition-shadow">
+                <div class="absolute top-0 right-0 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">Горячее</div>
+                <h4 class="text-lg font-bold text-gray-900 mb-2 mt-1 leading-tight">Успейте забронировать и получите бассейн БЕСПЛАТНО</h4>
+                <p class="text-sm text-gray-600 mb-3 leading-relaxed">Только в <strong class="text-gray-800">июне и сентябре</strong> — бронирование на будущие даты с подарком! Забронируйте номер третьей категории до <strong class="text-accent">15 мая</strong> и наслаждайтесь бесплатным использованием бассейна.</p>
+                
+                <div class="bg-orange-50/50 p-3 rounded-xl mb-3 border border-orange-50">
+                    <p class="text-[11px] font-bold text-gray-500 mb-2 uppercase tracking-wider">Преимущества:</p>
+                    <ul class="space-y-1.5 text-xs text-gray-800 font-medium">
+                        <li class="flex items-start gap-1.5">
+                            <svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 
+                            <span>Дополнительный бонус при брони до 15 мая</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 
+                            <span>Возможность расслабиться и освежиться</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <svg class="w-4 h-4 text-accent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 
+                            <span>Идеально для отдыха семьей и праздников!</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <p class="text-[13px] text-gray-700 font-semibold mb-3">Не пропустите! Количество предложений ограничено.</p>
+                <p class="text-[10px] text-gray-400 italic leading-tight">* Время акции может досрочно прекратиться в зависимости от заполнения.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-teal-100 mb-5 relative overflow-hidden hover:shadow-md transition-shadow">
+                <div class="absolute top-0 right-0 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">Новинка</div>
+                <h4 class="text-lg font-bold text-gray-900 mb-2 mt-1 leading-tight">Дневное пребывание со скидкой</h4>
+                <p class="text-sm text-gray-600 mb-3 leading-relaxed">Планируете отметить особый день — День рождения, Юбилей или годовщину? Проведите время в уютной и красивой обстановке.</p>
+                
+                <div class="bg-teal-50 p-3 rounded-xl mb-4 border border-teal-100 flex items-center gap-3">
+                    <div class="bg-white px-2 py-1 rounded-lg text-brand font-black text-lg shadow-sm">-10%</div>
+                    <p class="text-sm font-bold text-gray-800 leading-tight">При бронировании дневного пребывания от 10 человек</p>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-[11px] font-bold text-gray-500 mb-2 uppercase tracking-wider">В стоимость входит:</p>
+                    <ul class="space-y-1.5 text-xs text-gray-800 font-medium">
+                        <li class="flex items-start gap-1.5">
+                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                            <span>Бассейн с удобными лежаками</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                            <span>Мангальная зона и печь с казаном</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                            <span>Зона кухни для подготовки угощений</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <p class="text-[13px] text-brand font-bold leading-tight">Забронируйте сегодня и сделайте праздник особенным!</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-200 relative overflow-hidden hover:shadow-md transition-shadow">
+                <div class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">Скидка</div>
+                <h4 class="text-lg font-bold text-gray-900 mb-2 mt-1 leading-tight">Скидка 5% постоянным гостям</h4>
+                <p class="text-sm text-gray-600 mb-4 leading-relaxed">Постоянным гостям по прибытию после проверки данных будет применена приятная скидка <strong class="text-gray-900">-5%</strong>.</p>
+                
+                <p class="text-[10px] text-gray-400 italic leading-tight">* Данная акция не суммируется с другими специальными предложениями и акциями.</p>
+            </div>
+
+        </div>
+        <div class="p-5 border-t border-gray-200 bg-white">
+            <a href="#rooms" onclick="togglePromoPanel()" class="block w-full text-center bg-brand hover:bg-teal-600 text-white font-bold py-3 rounded-xl shadow-md transition-colors">Подобрать номер</a>
+        </div>
+    </div>
+    
+    <div id="promo-overlay" onclick="togglePromoPanel()" class="fixed inset-0 bg-black/50 z-[65] hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm"></div>
+
+    
 </body>
 
 </html>
