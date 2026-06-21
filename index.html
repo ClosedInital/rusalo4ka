@@ -737,7 +737,8 @@
             <button onclick="closeRoomModal()"
                 class="absolute top-4 right-4 z-20 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-800 hover:text-red-500 hover:bg-white shadow-md transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
                 </svg>
             </button>
 
@@ -748,18 +749,25 @@
 
                 <button onclick="scrollModalGallery(-1)"
                     class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
                 </button>
                 <button onclick="scrollModalGallery(1)"
                     class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-gray-700 shadow border border-gray-200 opacity-0 group-hover/modalslider:opacity-100 transition-opacity hover:text-brand focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
                 </button>
             </div>
 
             <div class="w-full md:w-1/2 p-6 md:p-8 flex flex-col h-full bg-white min-w-0 overflow-hidden">
                 <div class="mb-4 shrink-0">
-                    <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2 leading-tight">Название номера</h3>
-                    <div class="inline-block bg-teal-50 text-brand font-semibold px-3 py-1 rounded-lg w-max text-xs sm:text-sm">
+                    <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2 leading-tight">
+                        Название номера</h3>
+                    <div
+                        class="inline-block bg-teal-50 text-brand font-semibold px-3 py-1 rounded-lg w-max text-xs sm:text-sm">
                         Вместимость: <span id="modal-capacity"></span>
                     </div>
                 </div>
@@ -772,14 +780,16 @@
 
                     <div>
                         <h4 class="font-bold text-gray-900 mb-3 text-base">Удобства в номере:</h4>
-                        <ul id="modal-amenities-ul" class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 text-gray-700">
+                        <ul id="modal-amenities-ul"
+                            class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 text-gray-700">
                         </ul>
                     </div>
                 </div>
 
                 <div class="pt-4 border-t border-gray-100 flex justify-end shrink-0">
                     <span id="modal-price" class="hidden"></span>
-                    <button onclick="window.open('https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru', '_blank'); closeRoomModal();"
+                    <button
+                        onclick="window.open('https://reservationsteps.ru/rooms/index/8dc26407-5b2f-46e5-8597-ebfc46cf8111?lang=ru', '_blank'); closeRoomModal();"
                         class="w-full sm:w-auto bg-brand hover:bg-teal-600 text-white font-bold py-3.5 px-10 rounded-xl shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 text-center">
                         Перейти к бронированию
                     </button>
@@ -1658,7 +1668,7 @@
         function openRoomModal(title, capacity, price, images) {
             document.getElementById('modal-title').innerHTML = title;
             document.getElementById('modal-capacity').innerText = capacity;
-            
+
             const priceEl = document.getElementById('modal-price');
             if (priceEl) priceEl.innerText = price;
 
@@ -1683,7 +1693,9 @@
             if (isBrick) shortAmenities.push('Раздельный санузел и душевая');
             else shortAmenities.push('Собственный санузел');
 
-            if (!isStandard) shortAmenities.push('Чайник', 'Фен');
+            if (!isStandard) {
+                shortAmenities.push('Чайник', 'Фен', 'Графин, стаканы');
+            }
             if (isApart) shortAmenities.push('Стиральная машина', 'Ручной пылесос');
             if (isEco || isApart) shortAmenities.push('Пользование бассейном');
 
@@ -1696,8 +1708,8 @@
             if (isBrick || isWood) longAmenities.push('Собственная просторная терраса');
 
             if (isApart) {
-                longAmenities.push('Кухня с индукционной плитой, микроволновкой и посудой'); 
-                longAmenities.push('Персональный солярий с шезлонгами и малым бассейном (морская вода, вид на море)'); 
+                longAmenities.push('Кухня с индукционной плитой, микроволновкой и посудой');
+                longAmenities.push('Персональный солярий с шезлонгами и малым бассейном (морская вода, вид на море)');
             }
 
             // 3. Рендеринг списка в едином красивом стиле
@@ -2280,47 +2292,68 @@
     </div>
 
     <!-- Кнопка акций с пульсацией -->
-    <button onclick="togglePromoPanel()" class="fixed left-0 top-1/3 z-40 group flex items-center justify-center focus:outline-none">
-        
+    <button onclick="togglePromoPanel()"
+        class="fixed left-0 top-1/3 z-40 group flex items-center justify-center focus:outline-none">
+
         <!-- Пульсирующий "радар" на заднем фоне -->
         <span class="absolute inset-0 bg-accent rounded-r-xl opacity-60 animate-ping"></span>
-        
-        <span class="relative bg-accent text-white px-2 py-4 rounded-r-xl shadow-lg group-hover:pr-4 transition-all flex items-center justify-center border border-l-0 border-orange-400">
-            <span class="font-bold tracking-widest rotate-180 drop-shadow-md" style="writing-mode: vertical-rl;">АКЦИИ %</span>
+
+        <span
+            class="relative bg-accent text-white px-2 py-4 rounded-r-xl shadow-lg group-hover:pr-4 transition-all flex items-center justify-center border border-l-0 border-orange-400">
+            <span class="font-bold tracking-widest rotate-180 drop-shadow-md" style="writing-mode: vertical-rl;">АКЦИИ
+                %</span>
         </span>
-        
+
     </button>
 
-    <div id="promo-panel" class="fixed left-0 top-0 h-full w-[420px] max-w-[92vw] bg-white z-[70] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div id="promo-panel"
+        class="fixed left-0 top-0 h-full w-[420px] max-w-[92vw] bg-white z-[70] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
         <div class="bg-accent p-6 flex justify-between items-center text-white shadow-md">
             <h3 class="text-xl font-bold flex items-center gap-2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7">
+                    </path>
+                </svg>
                 Спецпредложения
             </h3>
-            <button onclick="togglePromoPanel()" class="w-8 h-8 flex items-center justify-center hover:bg-orange-600 rounded-full transition-colors focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <button onclick="togglePromoPanel()"
+                class="w-8 h-8 flex items-center justify-center hover:bg-orange-600 rounded-full transition-colors focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
             </button>
         </div>
         <div class="p-6 flex-1 overflow-y-auto bg-gray-50 custom-scrollbar" id="promo-content">
-            
+
             <!-- Карточка 1: День России -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 mb-5 relative overflow-hidden hover:shadow-md transition-shadow">
-                <div class="absolute top-0 right-0 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">
+            <div
+                class="bg-white p-5 rounded-2xl shadow-sm border border-orange-100 mb-5 relative overflow-hidden hover:shadow-md transition-shadow">
+                <div
+                    class="absolute top-0 right-0 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">
                     Горячее
                 </div>
                 <h4 class="text-lg font-bold text-gray-900 mb-2 mt-1 leading-tight">
-                    Специальная акция ко Дню России! <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f7-1f1fa.svg" alt="РФ" class="inline-block w-5 h-5 align-text-bottom ml-0.5">
+                    Специальная акция ко Дню России! <img
+                        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f7-1f1fa.svg" alt="РФ"
+                        class="inline-block w-5 h-5 align-text-bottom ml-0.5">
                 </h4>
                 <p class="text-[13px] sm:text-sm text-gray-600 mb-4 leading-relaxed">
-                    Проживание в <strong class="text-gray-800">Эко-Домике</strong> (без питания). Самое выгодное предложение — только сейчас!
+                    Проживание в <strong class="text-gray-800">Эко-Домике</strong> (без питания). Самое выгодное
+                    предложение — только сейчас!
                 </p>
 
                 <div class="bg-orange-50/50 p-4 rounded-xl mb-4 border border-orange-50 space-y-3.5">
-                    
+
                     <!-- Первый период -->
                     <div>
                         <p class="text-[13px] font-bold text-gray-900 mb-1.5 flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
                             С 12 по 14 июня:
                         </p>
                         <ul class="text-[13px] text-gray-700 pl-6 space-y-1">
@@ -2328,11 +2361,15 @@
                             <li>• На 3 гостей — <strong class="text-gray-900 text-sm">14 000 ₽</strong></li>
                         </ul>
                     </div>
-                    
+
                     <!-- Второй период -->
                     <div class="pt-2.5 border-t border-orange-100">
                         <p class="text-[13px] font-bold text-gray-900 mb-1.5 flex items-center gap-1.5">
-                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
                             На 12-13 июня:
                         </p>
                         <ul class="text-[13px] text-gray-700 pl-6 space-y-1">
@@ -2344,60 +2381,90 @@
                     <!-- Инфо -->
                     <div class="pt-2.5 border-t border-orange-100">
                         <p class="text-[12px] text-gray-600 flex items-start gap-1.5">
-                            <svg class="w-4 h-4 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <svg class="w-4 h-4 text-accent shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                             <span>Стоимость доп. места уточняйте по телефону</span>
                         </p>
                     </div>
                 </div>
 
                 <p class="text-[13px] text-gray-700 font-semibold mb-2">Звоните и бронируйте прямо сейчас! 📞✨</p>
-                <p class="text-[10px] text-gray-400 italic leading-tight">* Данная акция может досрочно прекратиться в зависимости от заполнения.</p>
+                <p class="text-[10px] text-gray-400 italic leading-tight">* Данная акция может досрочно прекратиться в
+                    зависимости от заполнения.</p>
             </div>
 
             <!-- Карточка 2: Дневное пребывание -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-teal-100 mb-5 relative overflow-hidden hover:shadow-md transition-shadow">
-                <div class="absolute top-0 right-0 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">Новинка</div>
+            <div
+                class="bg-white p-5 rounded-2xl shadow-sm border border-teal-100 mb-5 relative overflow-hidden hover:shadow-md transition-shadow">
+                <div
+                    class="absolute top-0 right-0 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">
+                    Новинка</div>
                 <h4 class="text-lg font-bold text-gray-900 mb-2 mt-1 leading-tight">Дневное пребывание со скидкой</h4>
-                <p class="text-[13px] sm:text-sm text-gray-600 mb-3 leading-relaxed">Планируете отметить особый день — День рождения, Юбилей или годовщину? Проведите время в уютной и красивой обстановке.</p>
-                
+                <p class="text-[13px] sm:text-sm text-gray-600 mb-3 leading-relaxed">Планируете отметить особый день —
+                    День рождения, Юбилей или годовщину? Проведите время в уютной и красивой обстановке.</p>
+
                 <div class="bg-teal-50 p-3 rounded-xl mb-4 border border-teal-100 flex items-center gap-3">
                     <div class="bg-white px-2 py-1 rounded-lg text-brand font-black text-lg shadow-sm">-10%</div>
-                    <p class="text-sm font-bold text-gray-800 leading-tight">При бронировании дневного пребывания от 10 человек</p>
+                    <p class="text-sm font-bold text-gray-800 leading-tight">При бронировании дневного пребывания от 10
+                        человек</p>
                 </div>
 
                 <div class="mb-4">
                     <p class="text-[11px] font-bold text-gray-500 mb-2 uppercase tracking-wider">В стоимость входит:</p>
                     <ul class="space-y-2 text-[13px] text-gray-800 font-medium">
                         <li class="flex items-start gap-1.5">
-                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                             <span>Бассейн с удобными лежаками</span>
                         </li>
                         <li class="flex items-start gap-1.5">
-                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                             <span>Мангальная зона и печь с казаном</span>
                         </li>
                         <li class="flex items-start gap-1.5">
-                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 
+                            <svg class="w-4 h-4 text-brand shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                             <span>Зона кухни для подготовки угощений</span>
                         </li>
                     </ul>
                 </div>
-                
-                <p class="text-[13px] text-brand font-bold leading-tight">Забронируйте сегодня и сделайте праздник особенным!</p>
+
+                <p class="text-[13px] text-brand font-bold leading-tight">Забронируйте сегодня и сделайте праздник
+                    особенным!</p>
             </div>
 
             <!-- Карточка 3: Скидка 5% -->
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-200 relative overflow-hidden hover:shadow-md transition-shadow">
-                <div class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">Скидка</div>
+            <div
+                class="bg-white p-5 rounded-2xl shadow-sm border border-gray-200 relative overflow-hidden hover:shadow-md transition-shadow">
+                <div
+                    class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg uppercase tracking-wider shadow-sm">
+                    Скидка</div>
                 <h4 class="text-lg font-bold text-gray-900 mb-2 mt-1 leading-tight">Скидка 5% постоянным гостям</h4>
-                <p class="text-[13px] sm:text-sm text-gray-600 mb-4 leading-relaxed">Постоянным гостям по прибытию после проверки данных будет применена приятная скидка <strong class="text-gray-900">-5%</strong>.</p>
-                
-                <p class="text-[10px] text-gray-400 italic leading-tight">* Данная акция не суммируется с другими специальными предложениями и акциями.</p>
+                <p class="text-[13px] sm:text-sm text-gray-600 mb-4 leading-relaxed">Постоянным гостям по прибытию после
+                    проверки данных будет применена приятная скидка <strong class="text-gray-900">-5%</strong>.</p>
+
+                <p class="text-[10px] text-gray-400 italic leading-tight">* Данная акция не суммируется с другими
+                    специальными предложениями и акциями.</p>
             </div>
 
         </div>
         <div class="p-5 border-t border-gray-200 bg-white">
-            <a href="#rooms" onclick="togglePromoPanel()" class="block w-full text-center bg-brand hover:bg-teal-600 text-white font-bold py-3.5 rounded-xl shadow-md transition-colors">Подобрать номер</a>
+            <a href="#rooms" onclick="togglePromoPanel()"
+                class="block w-full text-center bg-brand hover:bg-teal-600 text-white font-bold py-3.5 rounded-xl shadow-md transition-colors">Подобрать
+                номер</a>
         </div>
     </div>
 
